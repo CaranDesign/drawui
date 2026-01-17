@@ -1,0 +1,24 @@
+.drawui-collapse {
+  position: relative;
+  width: fit-content;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.drawui-collapse details {
+  position: relative;
+}
+
+.drawui-collapse summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.drawui-collapse summary::-webkit-details-marker {
+  display: block; /* rimuove freccia di default */
+}
+
+.drawui-collapse-content {
+  margin-top: 10px;
+}

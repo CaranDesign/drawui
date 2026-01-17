@@ -1,0 +1,20 @@
+.drawui-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.drawui-card-header {
+  padding: 12px;
+  border-bottom: 1px solid transparent; /* opzionale, solo per layout */
+}
+
+.drawui-card-body {
+  padding: 12px;
+  flex: 1;
+}
+
+.drawui-card-footer {
+  padding: 12px;
+  border-top: 1px solid transparent; /* opzionale, solo per layout */
+}

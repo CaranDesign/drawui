@@ -1,0 +1,13 @@
+// src/utils/roughPaths.ts
+export const roundedRect = (x: number, y: number, width: number, height: number, r: number) => {
+  return `M${x + r},${y} 
+          H${x + width - r} 
+          A${r},${r} 0 0 1 ${x + width},${y + r} 
+          V${y + height - r} 
+          A${r},${r} 0 0 1 ${x + width - r},${y + height} 
+          H${x + r} 
+          A${r},${r} 0 0 1 ${x},${y + height - r} 
+          V${y + r} 
+          A${r},${r} 0 0 1 ${x + r},${y} 
+          Z`;
+};

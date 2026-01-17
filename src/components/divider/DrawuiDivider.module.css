@@ -1,0 +1,14 @@
+.drawui-divider {
+  position: relative;
+  display: block;
+}
+
+.drawui-divider.vertical {
+  height: 100%;
+  width: auto;
+}
+
+.drawui-divider.horizontal {
+  width: 100%;
+  height: auto;
+}
