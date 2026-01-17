@@ -8,6 +8,11 @@ export interface DrawuiButtonSize {
   fontSize:number,
 }
 
+export interface DrawuiInputSize {
+    height: number,
+    fontSize: number,
+    paddingX: number,
+}
 export interface DrawuiStroke {
   color: string;
   width: number;
@@ -17,7 +22,6 @@ export interface DrawuiRoughness {
   roughness: number;
   bowing: number;
 }
-
 
 
 export interface DrawuiTheme {
@@ -30,6 +34,8 @@ export interface DrawuiTheme {
   
     radius: Record<RadiusToken, number>,
 
-    buttonSize: Record<SizeToken, DrawuiButtonSize>
+    buttonSize: Record<SizeToken, DrawuiButtonSize>,
+  
+    inputSize: Record<SizeToken, DrawuiInputSize>,
 
 }

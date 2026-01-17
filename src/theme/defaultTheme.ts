@@ -54,5 +54,30 @@ export const defaultDrawuiTheme: DrawuiTheme = {
       height:70,
       fontSize: 20,
     },
-  }
+  },
+
+  inputSize: {
+    sm: {
+      height: 32,
+      fontSize: 12,
+      paddingX: 8,
+    },
+    md: {
+      height: 40,
+      fontSize: 14,
+      paddingX: 12,
+    },
+    lg: {
+      height: 48,
+      fontSize: 16,
+      paddingX: 16,
+    },
+    xl: {
+      height: 48,
+      fontSize: 16,
+      paddingX: 16,
+    },
+  },
+
+  
 };
