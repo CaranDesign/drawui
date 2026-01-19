@@ -7,7 +7,9 @@
    "module": "dist/drawui.es.js",
    "types": "dist/index.d.ts",
    "files": [
-      "dist"
+      "dist",
+      "README.md",
+      "CHANGELOG.md"
    ],
    "scripts": {
       "dev": "vite",
