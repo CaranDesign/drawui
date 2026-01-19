@@ -15,6 +15,7 @@ export const DrawuiButton: React.FC<DrawuiButtonProps> = ({
   size = "sm",
   backgroundColor,
   children,
+  fillStyle,
   ...props
 }) => {
   const theme = useDrawuiTheme();
@@ -40,6 +41,7 @@ export const DrawuiButton: React.FC<DrawuiButtonProps> = ({
         stroke: stroke.color,
         strokeWidth: stroke.width,
         fill: backgroundColor ?? theme.fill.background,
+        fillStyle:fillStyle,
         roughness: hovered
           ? theme.roughness.roughness + 1
           : theme.roughness.roughness,

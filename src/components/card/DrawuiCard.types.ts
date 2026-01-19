@@ -1,4 +1,4 @@
-import type { RadiusToken, StrokeWeight } from "../../theme/types";
+import type { FillStyles, RadiusToken, StrokeWeight } from "../../theme/types";
 import type { ReactNode } from "react";
 
 export interface DrawuiCardProps {
@@ -7,6 +7,7 @@ export interface DrawuiCardProps {
   width?: number;  // default 300
   height?: number; // default 200
   backgroundColor?: string;
+  fillStyle?: FillStyles;
   header?: ReactNode;
   footer?: ReactNode;
   children?: ReactNode;

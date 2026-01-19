@@ -12,6 +12,7 @@ export const DrawuiInput: React.FC<DrawuiInputProps> = ({
   radius = "md",
   inputSize = "md",
   className,
+  fillStyle,
   style,
   ...props
 }) => {
@@ -45,6 +46,7 @@ export const DrawuiInput: React.FC<DrawuiInputProps> = ({
           ? theme.roughness.roughness + 1
           : theme.roughness.roughness,
         bowing: theme.roughness.bowing,
+        fillStyle:fillStyle,
       }
     );
 

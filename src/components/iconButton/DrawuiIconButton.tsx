@@ -11,6 +11,7 @@ export const DrawuiIconButton: React.FC<DrawuiIconButtonProps> = ({
   radius = "md",
   size = "sm",
   icon,
+  fillStyle,
   backgroundColor,
   ...props
 }) => {
@@ -39,6 +40,7 @@ export const DrawuiIconButton: React.FC<DrawuiIconButtonProps> = ({
           ? theme.roughness.roughness + 1
           : theme.roughness.roughness,
         bowing: theme.roughness.bowing,
+        fillStyle:fillStyle,
       }
     );
 

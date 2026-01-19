@@ -16,6 +16,7 @@ export const DrawuiCard: React.FC<DrawuiCardProps> = ({
   backgroundColor,
   header,
   footer,
+  fillStyle,
   children,
   ...props
 }) => {
@@ -42,6 +43,7 @@ export const DrawuiCard: React.FC<DrawuiCardProps> = ({
           ? theme.roughness.roughness + 1
           : theme.roughness.roughness,
         bowing: theme.roughness.bowing,
+        fillStyle:fillStyle,
       }
     );
 

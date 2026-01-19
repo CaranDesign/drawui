@@ -1,17 +1,18 @@
-export type StrokeWeight = "thin" | "medium" | "thick";
-export type RadiusToken = "none" | "sm" | "md" | "lg" | "full";
-export type SizeToken = "sm" | "md" | "lg" | "xl";
+export type StrokeWeight  = "thin"    | "medium"  | "thick";
+export type RadiusToken   = "none"    | "sm"      | "md"      | "lg"  | "full";
+export type SizeToken     = "sm"      | "md"      | "lg"      | "xl";
+export type FillStyles    = "hachure" | "solid"   | "zigzag"  | "cross-hatch" | "dots" | "sunburst" | "dashed" | "zigzag-line";
 
 export interface DrawuiButtonSize {
   width: number,
   height: number,
-  fontSize:number,
+  fontSize: number,
 }
 
 export interface DrawuiInputSize {
-    height: number,
-    fontSize: number,
-    paddingX: number,
+  height: number,
+  fontSize: number,
+  paddingX: number,
 }
 export interface DrawuiStroke {
   color: string;

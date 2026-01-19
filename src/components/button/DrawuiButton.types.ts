@@ -1,4 +1,4 @@
-import type { RadiusToken, SizeToken, StrokeWeight } from "../../theme/types";
+import type { FillStyles, RadiusToken, SizeToken, StrokeWeight } from "../../theme/types";
 
 export interface DrawuiButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -6,4 +6,5 @@ export interface DrawuiButtonProps
   size?: SizeToken;
   radius?: RadiusToken;
   backgroundColor?: string;
+  fillStyle?: FillStyles,
 }

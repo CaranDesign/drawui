@@ -17,7 +17,7 @@ export const defaultDrawuiTheme: DrawuiTheme = {
   },
 
   roughness: {
-    roughness: 1.8,
+    roughness: 3,
     bowing: 2,
   },
 

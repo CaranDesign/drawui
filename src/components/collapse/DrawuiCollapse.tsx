@@ -11,6 +11,7 @@ export const DrawuiCollapse: React.FC<DrawuiCollapseProps> = ({
   strokeWeight = "medium",
   radius = "md",
   width = 300,
+  fillStyle,
   className,
 }) => {
   const theme = useDrawuiTheme();
@@ -32,6 +33,7 @@ export const DrawuiCollapse: React.FC<DrawuiCollapseProps> = ({
         fill: "transparent",
         roughness: theme.roughness.roughness,
         bowing: theme.roughness.bowing,
+        fillStyle:fillStyle,
       }
     );
 

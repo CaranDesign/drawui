@@ -10,6 +10,7 @@ export const DrawuiDivider: React.FC<DrawuiDividerProps> = ({
   width = "100%",
   vertical = false,
   className,
+  fillStyle,
 }) => {
   const theme = useDrawuiTheme();
   const svgRef = useRef<SVGSVGElement>(null);
@@ -38,6 +39,7 @@ export const DrawuiDivider: React.FC<DrawuiDividerProps> = ({
         strokeWidth: stroke.width,
         roughness: theme.roughness.roughness,
         bowing: theme.roughness.bowing,
+        fillStyle:fillStyle,
       });
       svgRef.current.appendChild(node);
     }
