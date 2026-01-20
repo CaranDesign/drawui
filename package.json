@@ -1,6 +1,6 @@
 {
    "name": "@carandesign/drawui",
-   "version": "0.2.2",
+   "version": "0.2.3",
    "description": "Sketch-style React UI component library",
    "type": "module",
    "main": "dist/drawui.cjs.js",
