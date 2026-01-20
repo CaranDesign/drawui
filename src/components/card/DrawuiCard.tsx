@@ -21,7 +21,6 @@ export const DrawuiCard: React.FC<DrawuiCardProps> = ({
   const theme = useDrawuiTheme();
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [hovered, setHovered] = useState(false);
   const [dynamicHeight, setDynamicHeight] = useState(height ?? 200);
 
   // Calculate dynamic height
@@ -61,9 +60,7 @@ export const DrawuiCard: React.FC<DrawuiCardProps> = ({
         stroke: stroke.color,
         strokeWidth: stroke.width,
         fill: backgroundColor ?? theme.fill.background,
-        roughness: hovered
-          ? theme.roughness.roughness + 1
-          : theme.roughness.roughness,
+        roughness:theme.roughness.roughness,
         bowing: theme.roughness.bowing,
         fillStyle: fillStyle,
       }
@@ -78,7 +75,6 @@ export const DrawuiCard: React.FC<DrawuiCardProps> = ({
     height,
     backgroundColor,
     theme,
-    hovered,
     fillStyle,
   ]);
 
@@ -89,8 +85,6 @@ export const DrawuiCard: React.FC<DrawuiCardProps> = ({
       {...props}
       ref={containerRef}
       className={`${styles["drawui-card"]} ${props.className ?? ""}`}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
       style={{
         position: "relative",
         width,
