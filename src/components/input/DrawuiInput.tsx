@@ -61,13 +61,7 @@ export const DrawuiInput: React.FC<DrawuiInputProps> = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <svg
-        ref={svgRef}
-        width="100%"
-        height={height}
-        style={{ position: "absolute", inset: 0 }}
-      />
-
+      
       <input
         {...props}
         className={styles["drawui-input-field"]}
@@ -86,6 +80,14 @@ export const DrawuiInput: React.FC<DrawuiInputProps> = ({
           props.onBlur?.(e);
         }}
       />
+
+      <svg
+        ref={svgRef}
+        width="100%"
+        height={height}
+        style={{ position: "absolute", inset: 0, pointerEvents:"none" }}
+      />
+
 
     </div>
   );

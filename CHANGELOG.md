@@ -1,4 +1,8 @@
 
+## [0.2.4] - 2026-01-20
+### Added
+- Added DrawuiInput Component
+
 ## [0.2.3] - 2026-01-19
 ### Edit
 - Removed hover effect on DrawuiCard component
